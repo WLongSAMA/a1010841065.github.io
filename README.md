@@ -1,11 +1,23 @@
 # a1010841065.github.io
-个人博客（ http://www.4dog.win ）的静态备份
+个人博客（ http://www.4dog.win ）的静像备份
 
 ### 运行环境:
 
 [Git](https://git-scm.com/downloads)
 
 [Node.js](https://nodejs.org)
+
+### 环境配置:
+
+```
+#Git
+git config --global user.email "邮箱"
+git config --global user.name "用户名"
+
+#Node.js
+npm config set registry http://registry.npm.taobao.org/
+npm install -g hexo-cli
+```
 
 ### 使用方法:
 
@@ -31,3 +43,4 @@ git add .
 git commit -m "更新内容"
 git push
 ```
+
