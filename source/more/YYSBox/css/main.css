@@ -1,0 +1,204 @@
+body {
+	color: #263238;
+	font-family: "PingFang SC", "Hiragino Sans GB", "文泉驿微米黑", "WenQuanYi Micro Hei", "微软雅黑", "Microsoft YaHei UI", "华文细黑", "Source Han Sans CN", "Droid Serif", Arial, Helvetica, serif, sans-serif;
+	margin: 0;
+	font-size: 15px;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+::selection {
+	background: #8bc34a;
+	color: #fff;
+}
+
+::-moz-selection {
+	background: #8bc34a;
+	color: #fff;
+}
+
+.section {
+	background-color: #ffcc80;
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 650px !important;
+	min-width: 320px;
+	min-height: 100vh;
+	/*min-height: 750px;*/
+	box-shadow: 0 0 20px 2px rgba(0, 0, 0, .2);
+	background-color: #fff;
+}
+
+.header {
+	background-color: #757575;
+	height: 55px;
+}
+
+.header .title {
+	font-size: 20px;
+	font-weight: bolder;
+	text-align: center;
+	line-height: 55px;
+}
+
+.main {
+	padding: 10px;
+}
+
+.main .SearchBar {
+	height: 60px;
+	position: absolute;
+	top: 65px;
+	width: 630px;
+	background-color: #ffffff;
+}
+
+.main .SearchBar .search {
+	height: 30px;
+	background: #e0e0e0 url(../img/search.png) no-repeat 5px center / 15px;
+	border: solid 1px #b0bec5;
+	position: relative;
+}
+
+.main .SearchBar .search input {
+	border: none;
+	background: none;
+	height: 30px;
+	width: calc(100% - 55px);
+	text-indent: 25px;
+}
+
+.main .SearchBar .search .enter {
+	background: #e0e0e0 url(../img/enter.png) no-repeat 5px center / 15px;
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.main .SearchBar .search .clear {
+	background: #e0e0e0 url(../img/clear.png) no-repeat 5px center / 15px;
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right: 35px;
+	top: 5px;
+	display: none;
+}
+
+.main .place {
+	margin-top: 70px;
+}
+
+.main .content .NotFound {
+	display: none;
+}
+
+.main .content .title1 {
+	color: #2979ff;
+	font-weight: bold;
+	font-size: 18px;
+	border-left: #2979ff solid 3px;
+	margin-left: -10px;
+	padding-left: 7px;
+	line-height: 40px;
+	border-bottom: #b0bec5 solid 1px;
+}
+
+.main .content .title2 {
+	color: #f44336;
+	font-weight: bold;
+	padding-top: 5px;
+}
+
+.main .content .title3 {
+	border-bottom: #eeeeee solid 1px;
+	padding: 5px 0;
+}
+
+.main .content .title3 span {
+	background-color: #eeeeee;
+	font-weight: bold;
+}
+
+.main .content .count {
+	float: right;
+	padding-top: 5px;
+}
+
+.ss-bar {
+	margin-top: 6px;
+}
+
+.ss-header {
+    position: relative;
+	letter-spacing: -5px;
+}
+
+.ss-header li {
+	position: relative;
+	box-sizing: border-box;
+	/*width: 20%;*/
+	width: 25%;
+	text-align: center;
+	display: inline-block;
+	word-spacing: normal;
+	border: 1px solid #f2f2f2;
+	letter-spacing: normal;
+}
+
+.ss-header li i {
+	position: absolute;
+	left: 75%;
+	top: 8px;
+	width: 12px;
+	height: 5px;
+	background: url(../img/arrow-icon.png) no-repeat;
+	background-position: -13px 0px;
+	background-size: 25px 5px;
+}
+
+.ss-header .actived i {
+	background-position: 0 0;
+}
+
+.ss-container .actived {
+    display: block;
+}
+
+.ss-container {
+    border-top: none;
+    z-index: 1;
+	background-color: #f2f2f2;
+}
+
+.ss-content {
+    display: none;
+    padding: 10px 0 0 10px;
+	margin: 10px 0;
+}
+
+.ss-content ul li {
+	width: 23%;
+	height: 25px;
+	line-height: 25px;
+	background: #ffffff;
+	text-align: center;
+	display: inline-block;
+	margin-bottom: 10px;
+	word-spacing: normal;
+	overflow: hidden;
+}
+
+
+

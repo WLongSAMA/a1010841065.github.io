@@ -10,6 +10,7 @@ keywords: 软件开发,网站搭建,平面设计
 author: WLong
 language: zh-CN
 timezone: UTC
+since: 2010
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -73,7 +74,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: yilia
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -82,6 +83,7 @@ deploy:
   repository: https://github.com/a1010841065/a1010841065.github.io.git
   branch: master
 
+# yilia主题 ###############
 jsonContent:
     meta: false
     pages: false
@@ -100,3 +102,13 @@ jsonContent:
       excerpt: false
       categories: false
       tags: true
+##########################
+
+# 本地搜索插件 ###########
+#npm install hexo-generator-searchdb --save
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+##########################

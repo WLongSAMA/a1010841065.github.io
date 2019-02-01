@@ -63,15 +63,15 @@ toc_empty_wording: '目录，不存在的…'
 top: true
 
 # Miscellaneous
-baidu_analytics: ''
+baidu_analytics: '828483cf0d00f5f17545371a5ddd20c9'
 google_analytics: ''
-favicon: /favicon.ico
+favicon: /favicon.png
 
 #你的头像url
 avatar: https://s.gravatar.com/avatar/3e20abdf8ecff737834a0f3230a10d47?s=128
 
 #是否开启分享
-share_jia: flase
+share_jia: false
 
 #评论：1、多说；2、网易云跟帖；3、畅言；4、Disqus；5、Gitment
 #不需要使用某项，直接设置值为false，或注释掉
@@ -97,10 +97,20 @@ gitment_oauth:
   client_id: ''           #client ID
   client_secret: ''       #client secret
 
+#6、Valine https://valine.js.org
+valine:
+  enable: true
+  appid: '8Py25p5A2L7ATvJR3ipRP3wo-gzGzoHsz'
+  appkey: 'lO2Y81sPTnRhyzJpIegXjE8T'
+  verify: false #验证码
+  notify: false #评论回复提醒
+  avatar: mm #评论列表头像样式：''/mm/identicon/monsterid/wavatar/retro/hide
+  placeholder: '快把你的想法告诉我吧！'
+
 # 样式定制 - 一般不需要修改，除非有很强的定制欲望…
 style:
   # 头像上面的背景颜色
-  header: '#a553c3'
+  header: '#5c5eda'
   # 右滑板块背景
   slider: 'linear-gradient(200deg,#a0cfe4,#e8c37e)'
 
@@ -128,3 +138,4 @@ friends:
   友情链接6: "#"
 
 aboutme: 博客是对外开放的接口，<br>在这里分享自己的生活，记录自己的想法，<br>希望能遇到与自己价值观相同的朋友。
+
