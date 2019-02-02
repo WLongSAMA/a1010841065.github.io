@@ -389,7 +389,6 @@ valine:
   avatar: mm # gravatar style
   guest_info: nick,mail,link # custom comment header
   pageSize: 10 # pagination size
-  lang: zh
 
 
 # Support for youyan comments system.
@@ -421,8 +420,8 @@ gitment:
 # Available value:
 #    button | slide
 # Warning: Baidu Share does not support https.
-baidushare: true
-#  type: button
+#baidushare: true
+##  type: button
 
 # Share
 # This plugin is more useful in China, make sure you known how to use it.

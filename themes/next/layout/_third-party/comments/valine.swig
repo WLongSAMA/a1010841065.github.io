@@ -19,5 +19,8 @@
         guest_info:guest,
         pageSize:'{{ theme.valine.pageSize }}' || 10,
     });
+	$('.vemoji-btn').text('😀 表情');
+	$('.vpreview-btn').text('预览');
+	$('.vcontrol .col-20').attr('title', 'Markdown语法支持');
   </script>
 {% endif %}
