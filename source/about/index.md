@@ -18,9 +18,9 @@ date: 2019-01-27 20:00:16
 	"music": [{
 		"title": "红昭愿",
 		"author": "音阙诗听",
-		"url": "/about/红昭愿 - 音阙诗听.mp3",
-		"pic": "/about/红昭愿 - 音阙诗听.jpg",
-		"lrc": "/about/红昭愿 - 音阙诗听.lrc"
+		"url": "http://m10.music.126.net/20190203205738/c477d38e129300a9fa4ce42d40ee8756/ymusic/a201/7d78/e420/e12da94e22a825f422ddebdfc50e8520.mp3",
+		"pic": "http://p2.music.126.net/8ltR3o9R8uJ9_5Cc71cDhA==/109951162951242154.jpg?param=300x300",
+		"lrc": "http://music.163.com/api/song/media?id=452986458"
 	}, {
 		"title": "颈上胭脂红",
 		"author": "新街口组合",

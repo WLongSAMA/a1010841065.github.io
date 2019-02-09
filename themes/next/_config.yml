@@ -813,3 +813,6 @@ images: images
 
 # Theme version
 version: 5.1.4
+
+aplayer:
+  meting: true
