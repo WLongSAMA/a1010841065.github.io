@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>似懂非懂、</title>
+  
+  <subtitle>美好的人，眼中的世界也是美好的。</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://www.4dog.win/"/>
+  <updated>2019-02-17T06:03:44.000Z</updated>
+  <id>http://www.4dog.win/</id>
+  
+  <author>
+    <name>WLong</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>从Typecho成功迁移到Hexo</title>
+    <link href="http://www.4dog.win/2019/01/28/success/"/>
+    <id>http://www.4dog.win/2019/01/28/success/</id>
+    <published>2019-01-27T20:14:17.000Z</published>
+    <updated>2019-02-17T06:03:44.000Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><img src="/2019/01/28/success/top.png"><p>前前后后也搭建过很多次博客了，曾经都是使用动态博客程序（WordPress、Emlog、Typecho等），在浏览使用和撰写文章的时候相当方便。与此同时，动态博客程序必须要依赖稳定的服务器空间，这些服务器价格是昂贵的，对于我这种非营利性的个人博客来说相当不友好。</p><a id="more"></a><p>所以在很早之前就有用Github+Hexo搭建静态博客的想法，但一直都懒得动手。直到最近，用了将近两年的服务器租约到期，博客无处安放，不得不去另辟新地。现在我的博客存放在Github上，有时间就会来更新点内容。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;img src=&quot;/2019/01/28/success/top.png&quot;&gt;
+&lt;p&gt;前前后后也搭建过很多次博客了，曾经都是使用动态博客程序（WordPress、Emlog、Typecho等），在浏览使用和撰写文章的时候相当方便。与此同时，动态博客程序必须要依赖稳定的服务器空间，这些服务器价格是昂贵的，对于我这种非营利性的个人博客来说相当不友好。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="闲言碎语" scheme="http://www.4dog.win/categories/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD/"/>
+    
+    
+      <category term="Hexo" scheme="http://www.4dog.win/tags/Hexo/"/>
+    
+      <category term="Typecho" scheme="http://www.4dog.win/tags/Typecho/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://www.4dog.win/2019/01/01/hello-world/"/>
+    <id>http://www.4dog.win/2019/01/01/hello-world/</id>
+    <published>2019-01-01T00:00:00.000Z</published>
+    <updated>2019-02-17T06:03:44.000Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><a id="more"></a><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="闲言碎语" scheme="http://www.4dog.win/categories/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD/"/>
+    
+    
+      <category term="Hexo" scheme="http://www.4dog.win/tags/Hexo/"/>
+    
+      <category term="Hello World" scheme="http://www.4dog.win/tags/Hello-World/"/>
+    
+  </entry>
+  
+</feed>
