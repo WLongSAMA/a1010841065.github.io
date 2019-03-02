@@ -1,5 +1,5 @@
 # a1010841065.github.io
-个人博客（ http://www.4dog.win ）的静像备份
+个人博客（ http://www.4dog.win ）的静像存档
 
 ### 运行环境:
 
