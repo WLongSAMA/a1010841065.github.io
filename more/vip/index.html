@@ -215,7 +215,8 @@ iframe {
 			<div class="input-group">
 				<span class="input-group-addon">选择接口</span>
 				<select class="input-lg" id="jk">
-					<option selected="selected" value="http://api.baiyug.cn/vip/index.php?url=">百域阁（http://api.baiyug.cn）</option>
+					<option selected="selected" value="http://api.baiyug.cn/vip/index.php?url=">百域学院（http://app.baiduoos.cn）</option>
+					<option value="http://api.baiyug.vip/index.php?url=">百域阁（http://api.baiyug.vip）</option>
 					<option value="http://014670.cn/jx/ty.php?url=">强强视频解析（http://www.014670.cn）</option>
 					<option value="http://jiexi.071811.cc/jx.php?url=">石头云免费解析（http://www.071811.cc）</option>
 					<option value="http://api.zuilingxian.com/jiexi.php?url=">新决起视频云解析（http://api.zuilingxian.com）</option>
@@ -284,7 +285,21 @@ function bf() {
 	document.getElementById("player").src = lj();
 }
 function xck() {
+	document.getElementById("player").src = "";
 	window.open(lj(), "_blank");
+}
+function GetQueryString(name) {
+	var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+	var r = decodeURI(window.location.search).substr(1).match(reg);
+	//var r = window.location.search.substr(1).match(reg);
+	if (r != null) return unescape(r[2]);
+	return null;
+}
+window.onload = function () {
+	if (GetQueryString("url") != "" && GetQueryString("url") != null) {
+		document.getElementById("url").value = GetQueryString("url");
+		bf();
+	}
 }
 	</script>
 </body>
