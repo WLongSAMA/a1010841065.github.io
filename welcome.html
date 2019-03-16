@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>正在跳转</title>
+	<style>
+a {
+	color: #333;
+}
+
+body {
+	font: 16px/1.8 "Microsoft Jhenghei", "Hiragino Sans GB", "Microsoft YaHei", arial, sans-serif;
+	color: #333;
+	text-align: center;
+	width: auto;
+}
+
+.hide {
+	display: none;
+}
+
+.main {
+	margin: 0 auto;
+	max-width: 320px;
+}
+
+h1, .animate-init {
+	opacity: 0;
+	top: -10px;
+	position: relative;
+}
+
+.animate-end {
+	opacity: 0;
+	top: 10px;
+	position: relative;
+}
+
+h1 {
+	font-size: 45px;
+	margin-top: 50px;
+	opacity: 0;
+}
+
+.quote {
+	font-size: 18px;
+	margin: 40px 0;
+	color: #666;
+}
+
+.quote-text {
+	text-shadow: 2px 2px 1px #999;
+	margin-bottom: 5px;
+}
+
+.quote-author {
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+.tips-link {
+	font-size: 12px;
+}
+
+.tips-link a {
+	display: inline-block;
+	text-decoration: none;
+	border-bottom: 1px solid #ccc;
+}
+
+.tips-link a:hover {
+	border-bottom: 1px solid #333;
+}
+
+.tips-link a:active {
+	top: 1px !important;
+}
+
+.quote::before {
+	content: "\201C";
+	border-top: 1px solid #ccc;
+	font-size: 5em;
+	line-height: 0.8em;
+	color: #666;
+	text-align: left;
+	text-indent: -60px;
+}
+
+.quote::before, .quote::after {
+	display: block;
+	height: 24px;
+	opacity: 0.2;
+}
+
+.quote::after {
+	content: "\201D";
+	border-bottom: 1px solid #ccc;
+	font-size: 5em;
+	line-height: 0.8em;
+	color: #666;
+	text-align: right;
+	letter-spacing: -60px;
+}
+	</style>
+</head>
+
+<body>
+<div class="hide"><p>请点击右上角，选择在外部浏览器中打开。</p></div>
+<div class="main">
+	<div class="header">
+		<h1>Welcome</h1>
+	</div>
+	<div class="quote">
+		<p class="quote-text animate-init">海内存知己，天涯若比邻。</p>
+		<p class="quote-author animate-init">——<strong>王勃</strong></p>
+	</div>
+	<div class="tips">
+		<p class="tips-welcome animate-init">感谢访问本站！</p>
+		<p class="tips-link animate-end"><a href="http://www.4dog.win/">页面 <span id="time">5</span> 秒后自动跳转，请稍后...</a></p>
+	</div>
+</div>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+function isWeiXin() {
+	var ua = window.navigator.userAgent.toLowerCase();
+	if (ua.match (/MicroMessenger/i) == 'micromessenger') {
+		return true;
+	} else {
+		return false;
+	}
+}
+
+var count = 10;
+function countDown() {
+	if (count <= 0) count = 10;
+	document.getElementById("time").innerHTML = count;
+	count -= 1;
+	if (count == 0) {
+		location.href="/";
+	}
+	setTimeout("countDown()",1000);
+}
+
+window.onload = function () {
+	countDown();
+}
+
+if (isWeiXin()) {
+	$(".main").hide();
+	$(".hide").show();
+}
+</script>
+<script type="text/javascript">
+$(document).ready(function () {
+	var delay = 1;
+	var DELAY_STEP = 200;
+	var animationOptions = { opacity: 1, top: 0};
+
+	$('h1').animate(animationOptions).promise()
+			.pipe(animateMain)
+			.pipe(animateLink);
+
+	function animateMain() {
+		var dfd = $.Deferred();
+		var els = $('.animate-init');
+		var size = els.length;
+
+		els.each(function (index, el) {
+			delay++;
+			$(el).delay(index * DELAY_STEP)
+					.animate(animationOptions);
+			(size - 1 === index) && dfd.resolve();
+		});
+		return dfd.promise();
+	}
+
+	function animateLink() {
+		$('.tips-link').delay(delay * DELAY_STEP).animate({
+			opacity: 1,
+			top: 0
+		}).promise().done(animationQuote);
+	}
+
+	function animationQuote() {}
+});
+</script>
+
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?828483cf0d00f5f17545371a5ddd20c9";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</body>
+</html>
